@@ -1,13 +1,13 @@
 def get_data():
-    weight = input('Enter weight: ')
-    height = input('Enter height: ')
+    weight = float(input('Enter weight: '))
+    height = float(input('Enter height: '))
     data = {'weight':weight, 'height':height}
     return data
 
-def BMI(height, weight):
-    BMI = weight/height**2
-    print('BMI: '%f)%(bmi)
+def count_BMI(weight, height):
+    bmi = weight/height**2
+    print('BMI: %s'%(bmi))
 
 data = get_data()
 
-BMI(data['weight'],data['height'])
+count_BMI(data['weight'],data['height'])
